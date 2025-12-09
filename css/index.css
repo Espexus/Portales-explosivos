@@ -90,7 +90,7 @@ label {
     margin: 0 auto;
 }
 
-@media(max-width: 480px) {
+@media(max-width: 520px) {
     html {
         font-size: 14px;
     }

@@ -112,7 +112,7 @@ select, input, .boton-calculadora {
 .fondo-cafe {
     background-color: rgb(148, 119, 119);
 }
-@media(max-width: 480px) {
+@media(max-width: 520px) {
     html {
         font-size: 14px;
     }
