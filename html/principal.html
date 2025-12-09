@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universo explosivo</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/principal.css">
     <link rel="shortcut icon" href="../imgs/fotoPerfil.PNG" type="image/x-icon">
 </head>
 <body>
@@ -23,7 +23,7 @@
             Caían cientos de bombas cuando Pablito intentaba cruzar los portales y escapar del mundo junto a su familia, pero el cielo rojo no fue tan piadoso, una bomba destruyó el portal hacía el pasado por el cuál quería cruzar y quedó atrapado en este mundo de dinamita. <br><br>
             Pablito quiere rearmar un portal nuevo para poder escapar y volver a casa. Busca entre los cofres, aunque algunos son trampas, va y sigue buscando un lugar donde esconderse del ardiente furor de las balas y cañones. Debe recorrer 10 campos distintos recogiendo cristales hasta poder encontrar el regreso a su hogar.
         </p>
-        <img src="" class="imagen-refuerzo">
+        <img src="../imgs/explosion.png" class="imagen-refuerzo">
     </div>
 
     <div class="seccion">
@@ -37,9 +37,97 @@
         </p>
     </div>
 
-    <div class="calculadora">
-        
+    <div class="seccion">
+        <div class="calculadora fondo-verde">
+            <h2 class="titulo-blanco">Calculadora</h2>
+            <form id="formulario-calculadora texto-blanco">
+                <input type="text" name="nombre" placeholder="¿Cuál es tu nombre?">
+                <input type="number" name="tiempo" placeholder="Cantidad de años jugando videojuegos">
+                <select name="cantidad" >
+                    <option value="" disabled selected>Aprox cuántos juego has jugado?</option>
+                    <option value="1">1-10</option>
+                    <option value="2">10-30</option>
+                    <option value="3">30-50</option>
+                    <option value="4">50-200</option>
+                    <option value="5">+200</option>
+                </select>
+                <select name="reflejos">
+                    <option value="" disabled selected>Velocidad de tus reflejos?</option>
+                    <option value="1">Nivel 1</option>
+                    <option value="2">Nivel 2</option>
+                    <option value="3">Nivel 3</option>
+                    <option value="4">Nivel 4</option>
+                    <option value="5">Nivel 5</option>
+                </select>
+            </form>
+        </div>
     </div>
+
+    <div class="seccion">
+        <h4 class="titulo-cafe">Galeria de imagenes del juego</h4>
+        <div class="galeria">
+            <div class="imagen-space">
+                <img src="">
+            </div>
+
+            <div class="imagen-space">
+                <img src="">
+            </div>
+
+            <div class="imagen-space">
+                <img src="">
+            </div>
+            
+            <div class="imagen-space">
+                <img src="">
+            </div>
+
+            <div class="imagen-space">
+                <img src="">
+            </div>
+
+            <div class="imagen-space">
+                <img src="">
+            </div>
+
+            <div class="imagen-space">
+                <img src="">
+            </div>
+
+            <div class="imagen-space">
+                <img src="">
+            </div>
+
+            <div class="imagen-space">
+                <img src="">
+            </div>
+
+            <div class="imagen-space">
+                <img src="">
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed">
+        <button class="tema" id="boton-tema">Cambio de tema</button>
+    </div>
+
+    <div class="seccion">
+        <p class="texto">Recuerda que este es un mensaje explosivo y super secreto, si quieres autodestruir el mensaje por favor clickea el botón</p>
+
+        <button class="destruir" id="destruccion">Destruir</button>
+    </div>
+
+    <div class="seccion">
+        <a href="../desarollo.pdf" download>Descarga el proceso de desarrollo de nuestra web.</a>
+    </div>
+
+    <div class="oculto" id="mensaje-destruccion">
+        <p>Este mensaje está en proceso de destrucción, recuerda probar nuestra demo y esperar la sálida del videojuego final, será la mejor experiencia de tu vida.</p>
+        <p id="cuenta">10</p>
+    </div>
+    
+
     
 </body>
 </html>
