@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/principal.css">
     <link rel="shortcut icon" href="../imgs/fotoPerfil.PNG" type="image/x-icon">
 </head>
-<body>
+<body id="body">
     <div class="seccion">
         <h2 class="titulo-cafe">Jugabilidad</h2>
         <p class="texto">
@@ -38,9 +38,9 @@
     </div>
 
     <div class="seccion">
-        <div class="calculadora fondo-verde">
-            <h2 class="titulo-blanco">Calculadora</h2>
-            <form id="formulario-calculadora texto-blanco">
+        <div class="calculadora fondo-cafe">
+            <h2 class="titulo-blanco">Calculadora de esperanza de juego</h2>
+            <form id="formulario-calculadora" class="texto-blanco">
                 <input type="text" name="nombre" placeholder="¿Cuál es tu nombre?">
                 <input type="number" name="tiempo" placeholder="Cantidad de años jugando videojuegos">
                 <select name="cantidad" >
@@ -59,7 +59,11 @@
                     <option value="4">Nivel 4</option>
                     <option value="5">Nivel 5</option>
                 </select>
+                <input type="submit" class="boton-calculadora" value="Calcular">
             </form>
+            <div id="respuesta-calculadora">
+
+            </div>
         </div>
     </div>
 
@@ -67,49 +71,37 @@
         <h4 class="titulo-cafe">Galeria de imagenes del juego</h4>
         <div class="galeria">
             <div class="imagen-space">
-                <img src="">
+                <img class="imagen-gal" src="../imgs/captura1.png">
             </div>
 
             <div class="imagen-space">
-                <img src="">
+                <img class="imagen-gal" src="../imgs/captura2.png">
             </div>
 
             <div class="imagen-space">
-                <img src="">
+                <img class="imagen-gal" src="../imgs/captura3.png">
             </div>
             
             <div class="imagen-space">
-                <img src="">
+                <img class="imagen-gal" src="../imgs/captura4.png">
             </div>
 
             <div class="imagen-space">
-                <img src="">
+                <img class="imagen-gal" src="../imgs/captura5.png">
             </div>
 
             <div class="imagen-space">
-                <img src="">
+                <img class="imagen-gal" src="../imgs/captura6.png">
             </div>
 
-            <div class="imagen-space">
-                <img src="">
-            </div>
-
-            <div class="imagen-space">
-                <img src="">
-            </div>
-
-            <div class="imagen-space">
-                <img src="">
-            </div>
-
-            <div class="imagen-space">
-                <img src="">
-            </div>
         </div>
     </div>
 
     <div class="fixed">
         <button class="tema" id="boton-tema">Cambio de tema</button>
+    </div>
+    <div class="seccion">
+        <a href="../desarollo.pdf" download>Descarga el proceso de desarrollo de nuestra web.</a>
     </div>
 
     <div class="seccion">
@@ -118,16 +110,16 @@
         <button class="destruir" id="destruccion">Destruir</button>
     </div>
 
-    <div class="seccion">
-        <a href="../desarollo.pdf" download>Descarga el proceso de desarrollo de nuestra web.</a>
-    </div>
 
     <div class="oculto" id="mensaje-destruccion">
-        <p>Este mensaje está en proceso de destrucción, recuerda probar nuestra demo y esperar la sálida del videojuego final, será la mejor experiencia de tu vida.</p>
+        <p>Este mensaje está en proceso de destrucción, recuerda probar nuestra Demo y esperar la sálida del videojuego final, será la mejor experiencia de tu vida.</p>
         <p id="cuenta">10</p>
     </div>
     
 
-    
+    <script src="../js/tema.js"></script>
+    <script src="../js/calculadora.js"></script>
+    <script src="../js/destruccion.js"></script>
+    <script src="../js/cambioTema.js"></script>
 </body>
 </html>
