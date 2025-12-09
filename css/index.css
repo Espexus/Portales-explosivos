@@ -89,3 +89,15 @@ label {
     display: block;
     margin: 0 auto;
 }
+
+@media(max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+    header {
+        height: 40vh;
+    }
+    .descripcion-perfil {
+        width: 60%;
+    }
+}

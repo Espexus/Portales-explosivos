@@ -67,6 +67,7 @@ html {
     align-items: center;
     gap: 2%;
     overflow-x: scroll;
+    margin: 0 auto;
 }
 .imagen-space {
     flex: 0 0 40%;
@@ -110,4 +111,27 @@ select, input, .boton-calculadora {
 
 .fondo-cafe {
     background-color: rgb(148, 119, 119);
+}
+@media(max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+    .imagen-refuerzo {
+        width: 70%;
+        margin-top: 5%;
+    }
+    .galeria {
+        height: 35vh;
+    }
+    .imagen-space {
+        flex: 0 0 60%;
+    }
+    .calculadora {
+        width: 90%;
+    }
+    select, input {
+        width: 80%;
+        height: 35px;
+    }
+
 }
